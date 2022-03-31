@@ -30,8 +30,6 @@ To start the application on an alternative port to the default (8080) from your 
 ~~~ bash
 $ PORT=9090 npm start
 API Listening on http://localhost:9090
-
-# checking changes for git push
 ~~~
 
 ## Functionality
@@ -89,5 +87,3 @@ $ curl -s -X DELETE http://localhost:8080/delete/<id>
 n.b: For these commands anything surrounded by angled braces <> needs to be replaced by you
 
 ---
-
-#Testing for checking revert
