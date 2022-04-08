@@ -1,0 +1,14 @@
+#!/bin/bash
+npm install
+npm test
+
+docker build -t gcr.io/lbg-210322/myapp:latest .
+docker images
+
+gcloud auth activate-service-account --key-file ${SERVICEACCOUNT}
+
+# or we can run the bash.sh script to do all these step
+
+docker push gcr.io/lbg-210322/myapp:latest
+
+
