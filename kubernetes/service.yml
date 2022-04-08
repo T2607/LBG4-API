@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: node-service
+ labels:
+  app: node-api
+  env: prod
+spec:
+ type: LoadBalancer
+ selector:
+  app: node-pod
+ ports:
+ - port: 5000
+   targetPort: 5000
